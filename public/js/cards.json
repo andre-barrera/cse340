@@ -1,0 +1,40 @@
+{
+    "dolerean" : [
+        {
+            "image" : "/images/upgrades/bumper_sticker.jpg",
+            "title" : "Flux Capacitor"
+        },
+        {
+            "image" : "/images/upgrades/flame.jpg",
+            "title" : "Flame Decals"
+        },
+        {
+            "image" : "/images/upgrades/flux-cap.png",
+            "title" : "Bumper Stickers"
+        },
+        {
+            "image" : "/images/upgrades/hub-cap.jpg",
+            "title" : "Hub Caps"
+        }
+    ],
+
+    "reviews" : [
+        {
+            "review" : "\"So fast it's almost like traveling in time.\" (4/5)"
+        },
+
+        {
+            "review" : "\"Coolest on the road.\" (4/5)" 
+        },
+
+        {
+            "review" : "\"I'm feeling Mcfly.\" (5/5)"
+        }, 
+        {
+            "review" : "\"The most futuristic ride of our day.\" (4.5/5)"
+        },
+        {
+            "review" :"\"80's livin and I love it!\" (5/5)"
+        }
+    ]
+}
