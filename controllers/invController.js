@@ -19,4 +19,26 @@ invCont.buildByClassificationId = async function (req, res, next) {
   })
 }
 
+/* ***************************
+ *  Build inventory item detail view
+ * ************************** */
+invCont.buildByInvId = async function (req, res, next) {
+  const invId = req.params.invId
+  const data = await invModel.getInventoryByInvId(invId)
+  const itemData = data[0] // Expecting a single item
+  let nav = await utilities.getNav()
+  const detailHTML = await utilities.buildDetailView(itemData)
+
+  res.render("./inventory/detail", {
+    title: `${itemData.inv_make} ${itemData.inv_model}`,
+    nav,
+    detailHTML
+  })
+}
+
+
+invCont.triggerError = async function (req, res, next) {
+  throw new Error("Intentional 500 error for testing")
+}
+
 module.exports = invCont

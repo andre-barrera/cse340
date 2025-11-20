@@ -9,9 +9,11 @@
         margin-right: 2rem;
     }
 
-    nav ul{
+    nav ul li a{
         font-size: 2rem;
     }
+
+    
 
     .ptitle {
         font-size: 2rem;
@@ -83,4 +85,148 @@
     }
 
 
+    /* Inventory Grid */
+    #inv-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    list-style: none;
+    margin: 0;
+    }
+
+    /* Individual Card */
+    #inv-display li {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    /* Card Hover Effect */
+    #inv-display li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Thumbnail Image */
+    #inv-display img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    }
+
+    /* Text Box */
+    #inv-display .namePrice {
+    padding: 1.2rem;
+    text-align: center;
+    }
+
+    #inv-display h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    }
+
+    #inv-display h2 a {
+    text-decoration: none;
+    color: #222;
+    }
+
+    #inv-display h2 a:hover {
+    color: #0077cc;
+    }
+
+    #inv-display span {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007a00;
+    }
+
+    /* layout */
+    #inv-detail-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    }
+
+    /* image */
+    .inv-detail-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .detail-page > h1 {
+    padding-left: 2.5rem;
+  }
+
+  #inv-display li {
+    max-width: 320px;    
+    margin: 0 auto;      
 }
+
+    /*text area right */
+    .inv-detail-info {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .inv-detail-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+    }
+
+    .inv-detail-info p {
+    font-size: 1.1rem;
+    margin: 0.8rem 0;
+    line-height: 1.4;
+    }
+
+    /* pricing */
+    .inv-detail-info p strong {
+    color: #333;
+    font-weight: 600;
+    }
+
+    .inv-detail-info p:nth-child(2) { 
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0f7c0f; 
+    }
+
+    .inv-detail-info p:nth-child(3) { 
+    font-size: 1.2rem;
+    color: #444;
+    }
+
+      .error-container {
+    max-width: 700px;
+    padding: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  .error-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .error-container p {
+    font-size: 1.2rem;
+  }
+
+  .error-container a.button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+}
+
